@@ -1,0 +1,29 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["Roman Zaynetdinov <roman@zaynetro.com>"]
+edition = "2018"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[features]
+default-features = ["wee_alloc"]
+
+
+[dependencies]
+cfg-if = "0.1"
+
+# `wee_alloc` is a tiny allocator for wasm that is only ~1K in code size
+# compared to the default allocator's ~10K. It is slower than the default
+# allocator, however.
+wee_alloc = { version = "0.4", optional = true }
+
+
+# Size optimizations
+[profile.release]
+opt-level = 's'
+lto = true
+panic = "abort"
