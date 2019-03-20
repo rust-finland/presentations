@@ -1,0 +1,3 @@
+[submodule "2018-11-14-wasm-rust-reactjs"]
+	path = 2018-11-14-wasm-rust-reactjs
+	url = https://gitlab.com/jamestthompson3/rust-react-presentation.git
