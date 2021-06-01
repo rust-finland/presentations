@@ -1,3 +1,6 @@
 [submodule "2018-11-14-wasm-rust-reactjs"]
 	path = 2018-11-14-wasm-rust-reactjs
 	url = https://gitlab.com/jamestthompson3/rust-react-presentation.git
+[submodule "2021-05-27-ai-hub-tampere"]
+	path = 2021-05-27-ai-hub-tampere
+	url = https://github.com/Koura/cpu-cache-effects.git
